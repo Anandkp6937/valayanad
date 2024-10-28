@@ -5,9 +5,10 @@ const addres=document.getElementById('address');
 //function
 function scaleDetails(){
 addres.style.transform='scale(0.9)';
+modelBox.style.visibility='hidden';    
+modelBox.style.opacity='0';
  setTimeout(()=>{
      addres.style.transform='scale(1)';
-     closeModelBar();
  },1000);
 
 }
