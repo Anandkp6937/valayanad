@@ -19,18 +19,27 @@
           <div class="social-links">
                <ul class="social-ul">
 
-                    <li class="social-li"> <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                     <li class="social-li"><a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <li class="social-li"> <a href="https://www.facebook.com/sreevalayanaddevitemple/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                     <li class="social-li"><a href="#"></a>
                
                </ul>
           </div>
           <div class="modal">
-               <i class="fa-solid fa-bars"></i>
+               <i class="fa-solid fa-bars" id="modelBar"></i>
           </div>
+         
       </nav>
+      <!-- sidebar model -->
+      <div class="modelBox" id="modelBoxx">
+          <div class="closeBtn" id="closeBtnn"><i class="fa-solid fa-xmark"></i></div>
+          <ul class="modelBox-ul">
+               <li><a href="#contact" onclick="scaleDetails()">Contact</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+      </div>
 <!-- section 1 -->
  <section class="section1 first">
-     <p class="heading">Valayand</p>
+     <p class="heading">Valayanad</p>
           <p class="descP headP">The holy land of Shakti, where the essence of creation and power converge</p>
  </section>
  <!-- section 2 -->
@@ -38,7 +47,7 @@
      <div class="mainImage2">
           <img src="img/1010.jpg" alt="valayandDevi">
      </div>
-     <p class="subHeading margin">History of Sree Valayand devi temple </p>
+     <p class="subHeading margin">History of Sree Valayanad devi temple </p>
      <p class="desc">Sree Valayanad Bagavathy is the family diety of Zamorin Swaroopam Despite the great army and financial strength of the Zamorin Raja he could not subjucate Valluvakkonathiri who as his political foe in their struggle for power. The Zamorin who could not win his battle against Valluvakkonathiri understood that the reason for his failure in the battle was due to Valluvakkonathiris high spiritual strength. </p>
      <div class="imageMainn">
           <img src="img/Sree-Valayanad-Temple-2048x683.jpg" alt="Valayanad-Temple">
@@ -126,19 +135,22 @@
      <p class="subHeading">Offical temple website :</p> <a href="https://valayanaddevi.in/"  class="subSec link" target="_blank">https://valayanaddevi.in/</a>
   </section>
 </div>
-  <footer>
-     <p class="footerP">Contact</p>
-     <div class="addres">
+<div class="section8" id="contact">
+     <div class="addres" id="address">
+          <p class="footerDescH extra">Contact</p>
           <p class="footerDescH">Sree Valayanadu Devi Temple</p>
           <p class="footerDesc">The Executive Officer,</p>
           <p class="footerDesc">Sree Valayanad Devaswom,Valayanad</p>
           <p class="footerDesc">Govindapuram,Mankavu, Kozhikode 673007</p>
-          <p class="footerDesc">sreevalayanadtemple@gmail.com</p>
+          <div class="mail"><p class="footerDesc">sreevalayanadtemple@gmail.com </p>
+          <i class="fa-solid fa-envelope"></i>
+          </div>
           <p class="footerDesc">0495 2741083</p>
      </div>
      <div class="me">
           <p class="me">Website made with love by <a href=""><i class="fa-brands fa-instagram"></i></a> </p>
      </div>
-  </footer>
+</div>
+   <script src="script.js"></script>
 </body>
 </html>
