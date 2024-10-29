@@ -322,11 +322,6 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
      transition:0.3s;
 }
 
-/* .eventImgdiv {
-     animation:animateOnScrollCustom2 5s ease both;
-     animation-timeline:view();
-     animation-range:entry 40% cover 60%;
-} */
 
 /* media queries */
 @media screen and (max-width:480px) {
@@ -355,8 +350,14 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
      .desc{
           animation:animateOnScrollCustomMobile 5s ease-in-out both;
           animation-timeline:view();
-          animation-range:entry 70% cover 40%;
+          animation-range:entry 50% cover 40%;
           transition:0.3s;
+     }
+     .normal .eventImgdiv {
+          animation:none;
+     }
+     .edit .eventImgdiv {
+         animation:none;
      }
      
 }
@@ -377,6 +378,17 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
           animation-timeline:view();
           animation-range:entry 70% cover 40%;
           transition:0.3s;
+     }
+    
+     .normal .eventImgdiv {
+          animation:animateOnScrollCustom3 5s ease;
+          animation-timeline:view();
+          animation-range:entry 0% cover 50%;
+     }
+     .edit .eventImgdiv {
+          animation:animateOnScrollCustom2 5s ease;
+          animation-timeline:view();
+          animation-range:entry 0% cover 60%;
      }
 }
 @media screen and (min-width:1025px) {
@@ -466,7 +478,16 @@ margin:3em;
 .edit .eventImgdiv{
      order:2;
 }
-
+.normal .eventImgdiv {
+     animation:animateOnScrollCustom3 5s ease;
+     animation-timeline:view();
+     animation-range:entry 0% cover 50%;
+}
+.edit .eventImgdiv {
+     animation:animateOnScrollCustom2 5s ease;
+     animation-timeline:view();
+     animation-range:entry 0% cover 60%;
+}
 
 }
 
@@ -484,7 +505,7 @@ margin:3em;
 @keyframes animateOnScrollCustomMobile {
      from{
           opacity:0;
-          transform: translateY(100px);
+          transform: translateY(80px);
      }
      to{
           opacity:1;
@@ -515,13 +536,3 @@ margin:3em;
      
 }
 
-.normal .eventImgdiv {
-     animation:animateOnScrollCustom3 5s ease;
-     animation-timeline:view();
-     animation-range:entry 0% cover 50%;
-}
-.edit .eventImgdiv {
-     animation:animateOnScrollCustom2 5s ease;
-     animation-timeline:view();
-     animation-range:entry 0% cover 60%;
-}
