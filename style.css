@@ -321,7 +321,10 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
      animation-range:entry 70% cover 40%;
      transition:0.3s;
 }
-
+.eventImgdiv {
+ border-radius:5px;
+      
+ }
 
 /* media queries */
 @media screen and (max-width:480px) {
@@ -347,6 +350,7 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
      .specailImg img{
      width:50%;
      }
+   
      .desc{
           animation:animateOnScrollCustomMobile 5s ease-in-out both;
           animation-timeline:view();
@@ -355,7 +359,16 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
      }
      .normal .eventImgdiv {
           animation:none;
+
      }
+     .eventImgdiv {
+         width:50%;
+          
+     }
+     .eventImgdiv img {
+          width:100%;
+           
+      }
      .edit .eventImgdiv {
          animation:none;
      }
@@ -390,6 +403,14 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
           animation-timeline:view();
           animation-range:entry 0% cover 60%;
      }
+     .eventImgdiv {
+          width:50%;
+           
+      }
+      .eventImgdiv img {
+           width:100%;
+            
+       }
 }
 @media screen and (min-width:1025px) {
      body{
