@@ -90,11 +90,13 @@ align-items: center;
 /* background-color:yellow; */
 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
 margin-top:-4.8em;
+
 }
 .imageMainn img{
 width:100%;
 border-radius:5px;
 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
+
 
 }
 .templeimg {
@@ -229,7 +231,7 @@ font-size:0.8em;
 .modelBox{
      /* background:rgb(4, 4, 71); */
     
-     background:rgb(74, 74, 212);
+     background:rgba(74, 74, 212,0.5);
      color:#fff;
      width:50%;
      height:auto;
@@ -245,7 +247,7 @@ font-size:0.8em;
      transform:translateY(-70em);
      visibility:hidden;
      opacity:0;
-     backdrop-filter: blur(10px);
+     backdrop-filter: blur(50px);
 
      
 
@@ -313,6 +315,19 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
 .fixing{
      text-align: center;
 }
+.desc{
+     animation:animateOnScrollCustom 5s ease-in-out both;
+     animation-timeline:view();
+     animation-range:entry 70% cover 40%;
+     transition:0.3s;
+}
+
+/* .eventImgdiv {
+     animation:animateOnScrollCustom2 5s ease both;
+     animation-timeline:view();
+     animation-range:entry 40% cover 60%;
+} */
+
 /* media queries */
 @media screen and (max-width:480px) {
      body{
@@ -337,6 +352,12 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
      .specailImg img{
      width:50%;
      }
+     .desc{
+          animation:animateOnScrollCustomMobile 5s ease-in-out both;
+          animation-timeline:view();
+          animation-range:entry 70% cover 40%;
+          transition:0.3s;
+     }
      
 }
 @media screen and (min-width:750px) and (max-width:1024px){
@@ -351,7 +372,12 @@ box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.36);
      .alignC{
           text-align:left;
      }
-
+     .desc{
+          animation:animateOnScrollCustomMobile 5s ease-in-out both;
+          animation-timeline:view();
+          animation-range:entry 70% cover 40%;
+          transition:0.3s;
+     }
 }
 @media screen and (min-width:1025px) {
      body{
@@ -442,4 +468,60 @@ margin:3em;
 }
 
 
+}
+
+@keyframes animateOnScrollCustom {
+     from{
+          opacity:0;
+          transform: translateY(200px);
+     }
+     to{
+          opacity:1;
+          transform: translateY(0);
+     }
+     
+}
+@keyframes animateOnScrollCustomMobile {
+     from{
+          opacity:0;
+          transform: translateY(100px);
+     }
+     to{
+          opacity:1;
+          transform: translateY(0);
+     }
+     
+}
+@keyframes animateOnScrollCustom2 {
+     from{
+          opacity:0;
+          transform: translateX(50em);
+     }
+     to{
+          opacity:1;
+          transform: translateY(0em);
+     }
+     
+}
+@keyframes animateOnScrollCustom3 {
+     from{
+          opacity:0;
+          transform: translateX(-50em);
+     }
+     to{
+          opacity:1;
+          transform: translateY(0em);
+     }
+     
+}
+
+.normal .eventImgdiv {
+     animation:animateOnScrollCustom3 5s ease;
+     animation-timeline:view();
+     animation-range:entry 0% cover 50%;
+}
+.edit .eventImgdiv {
+     animation:animateOnScrollCustom2 5s ease;
+     animation-timeline:view();
+     animation-range:entry 0% cover 60%;
 }
