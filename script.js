@@ -2,7 +2,7 @@ const modelBar=document.getElementById('modelBar');
 const modelBox=document.getElementById('modelBoxx');
 const closeBtn=document.getElementById('closeBtnn');
 const addres=document.getElementById('address');
-//function
+//function to scale view of address
 function scaleDetails(){
 addres.style.transform='scale(0.9)';
 modelBox.style.visibility='hidden';    
@@ -12,6 +12,7 @@ modelBox.style.opacity='0';
  },1000);
 
 }
+//function to close modal bar
 function closeModelBar(){
        modelBox.style.transform='translateX(70em)'
 }
@@ -22,6 +23,7 @@ modelBar.addEventListener('click',()=>{
      modelBox.style.transform='translateY(0em)'
 
 })
+// modal bar closing function
 closeBtn.addEventListener('click',()=>{
      closeModelBar();
 })
