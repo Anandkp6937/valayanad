@@ -30,9 +30,7 @@ ul ,li,a{
      display: flex;
      justify-content: space-between;
      align-items:center;
-     height:6em;
-    border-bottom-right-radius:5px;
-    border-bottom-left-radius:5px;
+     height:5em;
      background-color: rgb(50, 17, 80);
 }
 .internal-link{
