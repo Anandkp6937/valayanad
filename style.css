@@ -331,7 +331,7 @@ margin-top:3em;
  border-radius:10px;
       
  }
-
+ 
 /* media queries */
 /* (smaller display) */
 @media screen and (max-width:480px) {
@@ -408,7 +408,6 @@ margin-top:3em;
 
      body{
           font-size:18px ;
-          background-color: yellowgreen;
           
      }
      .mainImage2 img{
