@@ -52,7 +52,7 @@ ul ,li,a{
      z-index:2;
      text-align: center;
      transition:0.5s ease-in-out;
-     transform:translateY(-15em);
+     transform:translateY(0em);
    
 }
 .ulsavam-noti h3{

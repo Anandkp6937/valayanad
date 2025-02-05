@@ -13,7 +13,6 @@ addres.style.transform='scale(0.9)';
 }
 //window load functions
 document.addEventListener('DOMContentLoaded',()=>{
-    notificationBar.style.transform='translateY(0em)';
     setTimeout(()=>{
         notificationBar.style.transform='translateY(-15em)';
     },5000);
