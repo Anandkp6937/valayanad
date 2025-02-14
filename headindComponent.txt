@@ -1,0 +1,19 @@
+  <!-- alert of ulsavam -->
+       <div class="ulsavam-noti">
+          <h3> The Sree Valayanad Devi Temple Ulsavam begins on February 6th! Join the divine celebrations and seek Devi’s blessings! 🌺🔥</h3>
+       </div>
+         <!-- alert of ulsavam -->
+
+         for alerting in nav bar use this component below current version comment above navigation 
+
+
+         js
+
+         const notificationBar=document.querySelector('.ulsavam-noti');
+         document.addEventListener('DOMContentLoaded',()=>{
+    setTimeout(()=>{
+        notificationBar.style.transform='translateY(-15em)';
+    },5000);
+})
+
+jus edit the content of the ulsavam-noti h3
