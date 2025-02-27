@@ -42,6 +42,7 @@ ul ,li,a{
  }
  .notice-head h1{
      font-size:1em;
+     font-weight:600;
  }
 
 .updates{

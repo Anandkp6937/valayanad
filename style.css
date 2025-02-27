@@ -215,7 +215,11 @@ iframe{
      display: flex;
      flex-direction: column;
      gap:2em;
+     transition:0.3s ease-in-out;
 
+}
+.section7{
+     transition:0.3s ease-in-out; 
 }
 .footerDesc,.footerDescH{
      font-size:0.8em;
@@ -324,6 +328,7 @@ font-size:0.7em;
 }
 .section5,.section3,.section4,.section7{
 margin-top:3em;
+
 }
 .illams{
      margin-top:3.5em;
@@ -346,7 +351,23 @@ margin-top:3em;
  border-radius:10px;
       
  }
- 
+ .spl{
+     background:rgba(255, 255, 0, 0.712);
+     padding:10px;
+     border-radius:5px;
+
+ }
+ .attention{
+     color:rgb(50, 17, 80);
+ }
+ .whatsapp{
+     display: flex;
+     gap:10px;
+     margin-top:1em;
+     color:green;
+     padding:10px;
+     align-items: center;
+}
 /* media queries */
 /* (smaller display) */
 @media screen and (max-width:480px) {
