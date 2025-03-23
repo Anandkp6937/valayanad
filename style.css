@@ -368,6 +368,14 @@ margin-top:3em;
      padding:10px;
      align-items: center;
 }
+.feed{
+     font-size:0.9em;
+     padding:0 1em;
+     opacity:0.9;
+}
+.link-color{
+     color:rgba(8, 8, 102, 0.5);
+}
 /* media queries */
 /* (smaller display) */
 @media screen and (max-width:480px) {
